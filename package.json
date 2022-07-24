@@ -2,6 +2,8 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Bernardo Fragoso <BernardoFMF>",
+  "description": "Bernardo's personal portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +11,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.5.1",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
