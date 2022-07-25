@@ -5,7 +5,7 @@ import Paragraph from "../components/paragraph"
 import Section from "../components/section"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from "../components/layouts/projects"
-import { SkillSection, SkillType } from "../components/skills"
+import { MetaTitle, SkillSection } from "../components/skills"
 
 const Home = () => {
     const skillProps = {
@@ -49,35 +49,35 @@ const Home = () => {
                             Skills
                         </Heading>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Frontend</SkillType>
+                            <MetaTitle { ...skillProps }>Frontend</MetaTitle>
                             ReactJs / NextJs / Html &#38; Css
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Backend</SkillType>
+                            <MetaTitle { ...skillProps }>Backend</MetaTitle>
                             NodeJs / Express / Spring Boot
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Databases</SkillType>
+                            <MetaTitle { ...skillProps }>Databases</MetaTitle>
                             PostgreSQL / SQL Server / MongoDB / Firestore / Prisma (ORM)
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Others</SkillType>
+                            <MetaTitle { ...skillProps }>Others</MetaTitle>
                             Java / C# / Javascript / Typescript / C / Kotlin
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Cloud</SkillType>
+                            <MetaTitle { ...skillProps }>Cloud</MetaTitle>
                             gRPC / GPC services (PubSub, Storage, Compute Engine, Cloud Functions)
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Testing</SkillType>
+                            <MetaTitle { ...skillProps }>Testing</MetaTitle>
                             Jest, Supertest, JUnit, XUnit
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Tools &#38; IDE</SkillType>
+                            <MetaTitle { ...skillProps }>Tools &#38; IDE</MetaTitle>
                             Figma / VS Code / Intellij
                         </SkillSection>
                         <SkillSection>
-                            <SkillType { ...skillProps }>Version Control</SkillType>
+                            <MetaTitle { ...skillProps }>Version Control</MetaTitle>
                             Git
                         </SkillSection>
                     </Box>

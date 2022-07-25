@@ -17,18 +17,24 @@ const CarouselItem = ({ image, alt, index, title, description, onClick }) => (
         mx={2}
     >
         <VStack mb={6}>
-            <Heading
-                fontSize={{ base: "xl", md: "2xl" }}
-                textAlign="left"
-                w="full"
-                mb={2}
-                color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            >
-                {title}
-            </Heading>
-
-            <ClickableProjectImage src={image} alt={alt} w={400} mb={4} onClick={() => onClick(image)}></ClickableProjectImage>
-            <Text w="full" color={useColorModeValue("gray.800", "whiteAlpha.900")}>{description}</Text>
+            {
+                title && 
+                    <Heading
+                        fontSize={{ base: "xl", md: "2xl" }}
+                        textAlign="left"
+                        w="full"
+                        mb={2}
+                        color={useColorModeValue("gray.800", "whiteAlpha.900")}
+                    >
+                        {title}
+                    </Heading>
+            }
+            {
+                image && <ClickableProjectImage src={image} alt={alt} w={400} mb={4} onClick={() => onClick(image)} />
+            }
+            {
+                description && <Text w="full" color={useColorModeValue("gray.800", "whiteAlpha.900")}>{description}</Text>
+            }
         </VStack>
     </Flex>
 )

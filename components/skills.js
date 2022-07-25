@@ -7,7 +7,7 @@ export const SkillSection = styled(Box)`
     margin-top: 3px;
 `
 
-export const SkillType = styled.span(({ textColor, color }) => `
+export const MetaTitle = styled.span(({ textColor, color }) => `
     font-weight: bold;
     margin-right: 1em;
     background-color: ${color};

@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/projects'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/gridItem'
@@ -19,6 +19,9 @@ const Projects = () => {
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
+                <Box align="center" opacity={0.4} mt={6} fontSize="sm">
+                    More projects coming soon.
+                </Box>
             </Container>
         </Layout>
     )
