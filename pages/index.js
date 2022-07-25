@@ -69,6 +69,10 @@ const Home = () => {
                             gRPC / GPC services (PubSub, Storage, Compute Engine, Cloud Functions)
                         </SkillSection>
                         <SkillSection>
+                            <SkillType { ...skillProps }>Testing</SkillType>
+                            Jest, Supertest, JUnit, XUnit
+                        </SkillSection>
+                        <SkillSection>
                             <SkillType { ...skillProps }>Tools &#38; IDE</SkillType>
                             Figma / VS Code / Intellij
                         </SkillSection>
