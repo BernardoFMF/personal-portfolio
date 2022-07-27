@@ -1,8 +1,8 @@
 import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/projects'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/gridItem'
-import surfManagementApp from '../public/thumbnails/surfManagementAppMockup1.jpg'
+import { ProjectGridItem } from '../components/gridItem'
+import surfManagementApp from '../public/thumbnails/surfManagementAppMockup2.jpg'
 
 const Projects = () => {
     return (
@@ -14,9 +14,9 @@ const Projects = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="surfmanagement" title="Surf Club Management Application" thumbnail={surfManagementApp}>
+                        <ProjectGridItem id="surfmanagement" title="Surf Club Management Application" thumbnail={surfManagementApp}>
                             A management application to keep track of the clubs members as well as their quotas, sports &#38; events.
-                        </WorkGridItem>
+                        </ProjectGridItem>
                     </Section>
                 </SimpleGrid>
                 <Box align="center" opacity={0.4} mt={6} fontSize="sm">

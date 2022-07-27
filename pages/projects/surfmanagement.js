@@ -20,7 +20,7 @@ import CarouselItem from '../../components/carouselItem'
 import ChakraCarousel from '../../components/carousel'
 import { useState } from 'react'
 import Section from '../../components/section'
-import { MetaTitle } from '../../components/skills'
+import { Meta } from '../../components/project'
 
 const Overlay = () => (
   <ModalOverlay
@@ -63,8 +63,7 @@ const Project = () => {
             The focus with this project was to deliver a great UX and UI, along with the ability to automate tedious tasks. 
           </Paragraph>
           <Paragraph>
-            Another important reason for creating the software was to create a membership card system so that members can obtain discounts on partner companies by 
-            showing the QRcode within the membership card and inputting the secret pin of the correspondent user.
+            This was my first experience with React
           </Paragraph>
         </Section>
         <Section delay={0.3}>
@@ -83,21 +82,18 @@ const Project = () => {
         <Section delay={0.4}>
           <List ml={4} my={4}>
             <ListItem>
-              <MetaTitle>Website</MetaTitle>
+              <Meta>Website</Meta>
               <Link href="https://surf-management-app.herokuapp.com/" color={"intensePink"} isExternal>
                 https://surf-management-app.herokuapp.com/ 
                 <ExternalLinkIcon mx="2px" />
               </Link>
             </ListItem>
             <ListItem>
-              <MetaTitle>Github Repository</MetaTitle>
-              <Link href="https://github.com/BernardoFMF/surf-management-app" color={"intensePink"} isExternal>
-                https://github.com/BernardoFMF/surf-management-app 
-                <ExternalLinkIcon mx="2px" />
-              </Link>
+              <Meta>Github Repository</Meta>
+              <span>Private repository</span>
             </ListItem>
             <ListItem>
-              <MetaTitle>Stack</MetaTitle>
+              <Meta>Stack</Meta>
               <span>NodeJS, Express, React, React-Redux, Material UI &#38; PostgreSQL</span>
             </ListItem>
           </List>
@@ -116,7 +112,7 @@ const Project = () => {
             alt="surf-management-mockup-1" 
             onClick={() => onClick('/thumbnails/surfManagementAppMockup2.jpg')} />
             <Paragraph>
-              Both mockups use assets created by <Link href="https://www.freepik.com/author/mockup-store" color={"intensePink"} isExternal>mockup.store</Link>
+              Both mockups use assets created by <Link href="https://www.freepik.com/author/mockup-store" color={"intensePink"} isExternal>mockup.store</Link>.
             </Paragraph>
         </Section>
         <Section delay={0.6}>
@@ -134,7 +130,7 @@ const Project = () => {
             alignContent="center"
           >
             <ChakraCarousel gap={20}>
-              <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="ESC" description="teste1" index={1} onClick={onClick}/>
+              <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="Responsive design" description="teste1" index={1} onClick={onClick}/>
               <CarouselItem title="ESC" description="teste1" index={2} onClick={onClick}/>
               <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="ESC" description="teste1" index={3} onClick={onClick}/>
               <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="ESC" description="teste1" index={4} onClick={onClick}/>

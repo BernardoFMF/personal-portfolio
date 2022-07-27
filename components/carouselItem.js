@@ -33,6 +33,9 @@ const CarouselItem = ({ image, alt, index, title, description, onClick }) => (
                 image && <ClickableProjectImage src={image} alt={alt} w={400} mb={4} onClick={() => onClick(image)} />
             }
             {
+                image && <ClickableProjectImage src={image} alt={alt} w={400} mb={4} onClick={() => onClick(image)} />
+            }
+            {
                 description && <Text w="full" color={useColorModeValue("gray.800", "whiteAlpha.900")}>{description}</Text>
             }
         </VStack>
