@@ -25,7 +25,7 @@ const Home = () => {
                             About me
                         </Heading>
                         <Paragraph>
-                            I&apos;m a software developer based in Portugal with a passion for programming and breathing life into new ideas, 
+                            I&apos;m a software engineer based in Portugal with a passion for programming and breathing life into new ideas, 
                             always giving my best to create a project I can proudly show off as my creation.
                         </Paragraph>
                         <Paragraph>
