@@ -33,7 +33,7 @@ const Home = () => {
                             always bringing a great user experience and accessibility.
                         </Paragraph>
                         <Paragraph>
-                            One of my favourite activities is just jamming on the guitar, watch tv shows or just programming (who would&apos;ve guessed, right?).
+                            One of my favorite activities is just jamming on the guitar, watch tv shows or just programming (who would&apos;ve guessed, right?).
                         </Paragraph>
                     </Box>
                 </Section>
