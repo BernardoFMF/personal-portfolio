@@ -9,7 +9,6 @@ import {
     ModalContent,
     ModalCloseButton,
     useDisclosure,
-    useToken,
     Heading,
     Tag
   } from '@chakra-ui/react'
@@ -67,7 +66,7 @@ const Project = () => {
             <ListItem>Internationalization (portuguese / english).</ListItem>
             <ListItem>Email notifications on new events and due quotas.</ListItem>
             <ListItem>Upload data to the system using csv files.</ListItem>
-            <ListItem>Reset password and credentials change.</ListItem>
+            <ListItem>Reset password and allow for credentials (username and password) change.</ListItem>
           </UnorderedList>
         </Section>
         <Section delay={0.4}>

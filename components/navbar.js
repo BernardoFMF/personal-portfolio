@@ -147,7 +147,7 @@ const Navbar = props => {
                                     download={true}
                                     isExternal
                                 >
-                                    LinkedIn
+                                    Curriculum Vitae
                                 </MenuItem>
                             </MenuList>
                         </Menu>
