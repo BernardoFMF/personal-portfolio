@@ -10,14 +10,13 @@ import {
     ModalCloseButton,
     useDisclosure,
     useToken,
-    Heading
+    Heading,
+    Tag
   } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ClickableProjectImage } from '../../components/project'
 import Paragraph from '../../components/paragraph'
 import Layout from '../../components/layouts/projects'
-import CarouselItem from '../../components/carouselItem'
-import ChakraCarousel from '../../components/carousel'
 import { useState } from 'react'
 import Section from '../../components/section'
 import { Meta } from '../../components/project'
@@ -30,11 +29,6 @@ const Overlay = () => (
 )
 
 const Project = () => {
-  const skillProps = {
-    textColor: useToken("colors", ["whiteAlpha.900"])[0],
-    color: useToken("colors", ["lightPurple"])[0]
-  }
-
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [ image, setImage ] = useState(null)
   const onClick = (image) => {
@@ -59,11 +53,8 @@ const Project = () => {
         </Section>
         <Section delay={0.2}>
           <Paragraph>
-            Project done in partnership with Ericeira Surf Clube to help create management application that will be used within the organization to manage their members.
-            The focus with this project was to deliver a great UX and UI, along with the ability to automate tedious tasks. 
-          </Paragraph>
-          <Paragraph>
-            This was my first experience with React
+            The project was done in partnership with <span><Link href="https://www.linkedin.com/company/ericeira-surf-clube/" color={"intensePink"} isExternal>Ericeira Surf Clube</Link></span> to help create a management application that will be used within the organization to manage their members.
+            The focus with this project was to deliver a great user experience and user interface, along with the ability to automate tedious tasks and create a way for the community to grow. 
           </Paragraph>
         </Section>
         <Section delay={0.3}>
@@ -71,12 +62,12 @@ const Project = () => {
             Specifications
           </Heading>
           <UnorderedList>
-            <ListItem>Ability to create, update &#38; delete members, sports, associations between members and sports, quotas &#38; events.</ListItem>
+            <ListItem>Ability to create, update and delete members, sports, associations between members and sports, quotas and events.</ListItem>
             <ListItem>Responsive design.</ListItem>
             <ListItem>Internationalization (portuguese / english).</ListItem>
-            <ListItem>Email notifications on new events &#38; due quotas.</ListItem>
-            <ListItem>Reset password &#38; credentials change.</ListItem>
+            <ListItem>Email notifications on new events and due quotas.</ListItem>
             <ListItem>Upload data to the system using csv files.</ListItem>
+            <ListItem>Reset password and credentials change.</ListItem>
           </UnorderedList>
         </Section>
         <Section delay={0.4}>
@@ -87,14 +78,24 @@ const Project = () => {
                 https://surf-management-app.herokuapp.com/ 
                 <ExternalLinkIcon mx="2px" />
               </Link>
+              {" "}
+              To test the application, log in with the following dummy credentials: username - joselopes, password - 123
             </ListItem>
             <ListItem>
               <Meta>Github Repository</Meta>
-              <span>Private repository</span>
+              <Link href="https://github.com/BernardoFMF/surf-management-app" color={"intensePink"} isExternal>
+                https://github.com/BernardoFMF/surf-management-app
+                <ExternalLinkIcon mx="2px" />
+              </Link>
             </ListItem>
             <ListItem>
-              <Meta>Stack</Meta>
-              <span>NodeJS, Express, React, React-Redux, Material UI &#38; PostgreSQL</span>
+              <Meta>Technologies</Meta>
+              <Tag mt={1} ml={1}>NodeJS</Tag>
+              <Tag mt={1} ml={1}>Express</Tag>
+              <Tag mt={1} ml={1}>React</Tag>
+              <Tag mt={1} ml={1}>React Redux</Tag>
+              <Tag mt={1} ml={1}>Material UI</Tag>
+              <Tag mt={1} ml={1}>PostgreSQL</Tag>
             </ListItem>
           </List>
         </Section>
@@ -115,32 +116,10 @@ const Project = () => {
               Both mockups use assets created by <Link href="https://www.freepik.com/author/mockup-store" color={"intensePink"} isExternal>mockup.store</Link>.
             </Paragraph>
         </Section>
-        <Section delay={0.6}>
-          <Container
-            py={8}
-            px={0}
-            maxW={{
-                base: "100%",
-                sm: "35rem",
-                md: "43.75rem",
-                lg: "57.5rem",
-                xl: "75rem",
-                xxl: "87.5rem"
-            }}
-            alignContent="center"
-          >
-            <ChakraCarousel gap={20}>
-              <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="Responsive design" description="teste1" index={1} onClick={onClick}/>
-              <CarouselItem title="ESC" description="teste1" index={2} onClick={onClick}/>
-              <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="ESC" description="teste1" index={3} onClick={onClick}/>
-              <CarouselItem image="/thumbnails/thumbnailESCmanagementApplication.png" alt="Inkdrop" title="ESC" description="teste1" index={4} onClick={onClick}/>
-            </ChakraCarousel>
-          </Container>
-        </Section>
       </Container>
     </Layout>
   )
 }
   
-  export default Project
-  export { getServerSideProps } from '../../components/chakra'
+export default Project
+export { getServerSideProps } from '../../components/chakra'

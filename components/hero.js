@@ -48,7 +48,7 @@ const Hero = () => {
                 <GridItem pl={2} gridColumn="2 / 3" gridRow="3" mt={8}>
                     <Section delay={0.5}>
                         <Heading as="h1" size="lg">
-                            Software Engineer
+                            Software Developer
                         </Heading>
                     </Section>
                 </GridItem>

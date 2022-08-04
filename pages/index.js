@@ -25,9 +25,12 @@ const Home = () => {
                             About me
                         </Heading>
                         <Paragraph>
-                            I'm a Software Engineer based in Portugal with a passion for programming and breathing life into new ideas, 
-                            always going the extra mile to create a project i can proudly show off. 
-                            Experienced in developing web applications including both frontend and backend always bringing excellent user experience and accessibility.
+                            I'm a software developer based in Portugal with a passion for programming and breathing life into new ideas, 
+                            always giving my best to create a project I can proudly show off as my creation.
+                        </Paragraph>
+                        <Paragraph>
+                            I have experience in developing web applications, including both frontend and backend, 
+                            always bringing a great user experience and accessibility.
                         </Paragraph>
                     </Box>
                 </Section>
@@ -50,7 +53,7 @@ const Home = () => {
                         </Heading>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Frontend</MetaTitle>
-                            ReactJs / NextJs / Html &#38; Css
+                            ReactJs / NextJs / Material UI / Chakra UI
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Backend</MetaTitle>
@@ -58,7 +61,7 @@ const Home = () => {
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Databases</MetaTitle>
-                            PostgreSQL / SQL Server / MongoDB / Firestore / Prisma (ORM)
+                            PostgreSQL / MongoDB / Firestore / Prisma (ORM)
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Others</MetaTitle>
@@ -74,11 +77,7 @@ const Home = () => {
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Tools &#38; IDE</MetaTitle>
-                            Figma / VS Code / Intellij
-                        </SkillSection>
-                        <SkillSection>
-                            <MetaTitle { ...skillProps }>Version Control</MetaTitle>
-                            Git
+                            Figma / Visual Studio Code / Intellij / Git
                         </SkillSection>
                     </Box>
                 </Section>
