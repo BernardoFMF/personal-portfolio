@@ -19,7 +19,7 @@ const NotFound = () => {
         <Heading as="h1" color={"lightPurple"}>Not found</Heading>
       </Section>
       <Section delay={0.2}>
-        <Text>The page you&apos;re looking for doesn't exist</Text>
+        <Text>The page you&apos;re looking for doesn&apos;t exist</Text>
       </Section>
       <Section delay={0.4}>
         <Box display="flex" position="absolute" mt={-20} ml={200} mr={10} zIndex={-1}>

@@ -41,7 +41,7 @@ const Hero = () => {
                 <GridItem pl={2} gridColumn="2 / 3" gridRow="3">
                     <Section delay={0.4}>
                         <Text fontSize={"lg"}>
-                            I'm a
+                            I&apos;m a
                         </Text> 
                     </Section>
                 </GridItem>
