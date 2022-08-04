@@ -77,8 +77,6 @@ const Project = () => {
                 https://surf-management-app.herokuapp.com/ 
                 <ExternalLinkIcon mx="2px" />
               </Link>
-              {" "}
-              To test the application, log in with the following dummy credentials: username - joselopes, password - 123
             </ListItem>
             <ListItem>
               <Meta>Github Repository</Meta>
