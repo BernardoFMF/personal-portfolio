@@ -99,7 +99,7 @@ const Navbar = props => {
                     </Text>
                     <LinkItem
                         target="_blank"
-                        href="/412251072_20220728200005453[915].pdf"
+                        href="/curriculum-vitae-bernardo-fragoso.pdf"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
@@ -143,7 +143,7 @@ const Navbar = props => {
                                 </MenuItem>
                                 <MenuItem
                                     as={Link}
-                                    href="/412251072_20220728200005453[915].pdf"
+                                    href="/curriculum-vitae-bernardo-fragoso.pdf"
                                     download={true}
                                     isExternal
                                 >

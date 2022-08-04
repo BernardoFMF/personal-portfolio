@@ -53,11 +53,11 @@ const Home = () => {
                         </Heading>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Frontend</MetaTitle>
-                            ReactJs / NextJs / Material UI / Chakra UI
+                            ReactJs / NextJs / Material UI / Chakra UI / Typescript
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Backend</MetaTitle>
-                            NodeJs / Express / Spring Boot
+                            NodeJs / Express / Typescript
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Databases</MetaTitle>
@@ -65,7 +65,7 @@ const Home = () => {
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Others</MetaTitle>
-                            Java / C# / Javascript / Typescript / C / Kotlin
+                            Java / C# / Javascript / C / Kotlin
                         </SkillSection>
                         <SkillSection>
                             <MetaTitle { ...skillProps }>Cloud</MetaTitle>
